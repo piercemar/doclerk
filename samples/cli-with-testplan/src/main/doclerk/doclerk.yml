@@ -1,0 +1,10 @@
+plan:
+- id: sample-testplan
+  modules:
+    - module: TestPlan
+      params:
+        testplan.root: src/main/testplan/root.yml
+    - module: XlsxTemplate
+      params:
+        xlsxtemplate.outFile: target/testplan.xlsx
+        xlsxtemplate.template: src/main/doclerk/TESTPLAN.xlsx

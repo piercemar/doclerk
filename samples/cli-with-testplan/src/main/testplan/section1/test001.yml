@@ -1,0 +1,18 @@
+title: 'Test 1 : Connection à l''application (admin)'
+context: >
+  Test de la partie "Administration" de l'application X.
+goal: >
+  Vérifier qu'il est possible de se connecter avec un profil _administrateur_.
+steps:
+  - title: $browse(&appUrl)
+    description: |
+      $iexplore().
+      $login("&lt;compte AD>")
+    preCondition: Le compte utilisé doit faire partie d'un des sous-groupes de _GROUP\_ADMIN_
+    requiredData:
+    expectedResult: $display("Administration")
+  - title: $menu("Gestion","Types de documents")
+    description: |
+      $menusection("Gestion")
+      $link("Types de document")
+    expectedResult: $display("Types de documents")

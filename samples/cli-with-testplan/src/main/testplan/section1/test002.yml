@@ -1,0 +1,18 @@
+title: 'Test 1 : Connection à l''application (user)'
+context: >
+  Test de la partie "Utilisateur" de l'application X.
+goal: >
+  Vérifier qu'il est possible de se connecter avec un profil _utilisateur_.
+steps:
+  - title: $browse(&appUrl)
+    description: |
+      $iexplore().
+      $login("&lt;compte USER>")
+    preCondition: Le compte utilisé doit faire partie d'un des sous-groupes de _GROUP\_USER_
+    requiredData:
+    expectedResult: $display("Tableau de bord")
+  - title: $menu("Recherche","Documents")
+    description: |
+      $menusection("Recherche")
+      $link("Document")
+    expectedResult: $display("Recherche de documents")

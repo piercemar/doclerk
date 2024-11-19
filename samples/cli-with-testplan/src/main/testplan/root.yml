@@ -1,0 +1,8 @@
+title: Doclerk - Sample TestPlan
+sections:
+  section1:
+    title: Section 1
+properties:
+  appUrl: http://url.to/app/
+macros:
+  - ./macro
