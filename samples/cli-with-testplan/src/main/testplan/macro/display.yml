@@ -1,0 +1,2 @@
+args: [page]
+return: La page "&page" est affichée

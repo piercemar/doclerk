@@ -1,0 +1,2 @@
+args: [user]
+return: Se connecter à l'application en tant que &user

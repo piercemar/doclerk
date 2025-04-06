@@ -1,0 +1,2 @@
+args: [url]
+return: Naviguer vers l'url <&url>

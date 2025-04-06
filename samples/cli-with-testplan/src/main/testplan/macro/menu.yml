@@ -1,0 +1,2 @@
+args: [section, item]
+return: "Menu > &section > &item"
